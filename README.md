@@ -31,8 +31,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/BrennoVsantos/newsLetter)
-- Live Site URL: [Add live site URL here](https://brennovsantos.github.io/newsLetter/)
+- Solution URL: [Code](https://github.com/BrennoVsantos/newsLetter)
+- Live Site URL: [Live site](https://brennovsantos.github.io/newsLetter/)
 
 ## My process
 
