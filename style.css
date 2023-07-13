@@ -1,0 +1,288 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(234, 29%, 20%);
+  height: 100vh;
+  gap: 20px;
+}
+
+.wrapper {
+  height: 600px;
+  border-radius: 20px;
+  background-color: hsl(0, 0%, 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.form {
+  width: 55%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.info {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 15px;
+}
+
+.image-wrapper {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.mob {
+  display: none;
+}
+
+.img {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img img {
+  width: 100%;
+}
+
+.form h1 {
+  font-weight: 700;
+  font-size: 3.5rem;
+}
+
+.lista {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 5px;
+}
+
+.lista li {
+  display: flex;
+  gap: 10px;
+}
+
+li img {
+  width: 20px;
+  margin-bottom: 10px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 80%;
+  height: auto;
+}
+
+.input-info {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.input-info p {
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+#invalid {
+  display: none;
+  color: red;
+}
+
+#email.invalid {
+  border: 1px solid tomato;
+  background-color: rgba(255, 0, 0, 0.144);
+  color: red;
+  animation: error 0.3s ease;
+}
+
+#email,
+#submit {
+  width: 100%;
+  height: 50px;
+  padding-left: 10px;
+  border-radius: 7px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+#email {
+  border: 1px solid hsl(231, 7%, 60%);
+  font-size: 1rem;
+}
+
+#submit {
+  margin-top: 15px;
+  background-color: hsl(235, 18%, 26%);
+  color: hsl(0, 0%, 100%);
+  font-weight: 700;
+  transition: 0.3s ease;
+}
+
+#submit:hover {
+  background-color: hsl(4, 100%, 67%);
+  box-shadow: 5px 5px 20px hsl(4, 100%, 67%);
+}
+
+#email:focus {
+  outline: 1px solid black;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  color: white;
+}
+.attribution a {
+  color: hsl(4, 100%, 67%);
+  text-decoration: none;
+}
+
+.wrapper-thx {
+  width: 450px;
+  height: 450px;
+  border-radius: 25px;
+  background-color: hsl(0, 0%, 100%);
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  overflow: hidden;
+  gap: 20px;
+  padding: 50px;
+}
+
+.wrapper-thx h2 {
+  font-size: 3rem;
+}
+
+.wrapper-thx p {
+  font-size: 0.9rem;
+}
+
+#usermail {
+  font-weight: 700;
+}
+
+#dismiss {
+  height: 50px;
+  width: 100%;
+  background-color: hsl(235, 18%, 26%);
+  color: hsl(0, 0%, 100%);
+  font-weight: 700;
+  transition: 0.3s ease;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+#dismiss:hover {
+  background-color: hsl(4, 100%, 67%);
+  box-shadow: 5px 5px 20px hsl(4, 100%, 67%);
+}
+
+@keyframes error {
+  0% {
+    transform: translateX(-30px);
+  }
+
+  50% {
+    transform: translateX(30px);
+  }
+
+  0% {
+    transform: translateX(0px);
+  }
+}
+
+@media (max-width: 730px) {
+  .wrapper {
+    flex-direction: column-reverse;
+    width: 100%;
+    height: 100%;
+    align-items: flex-start;
+  }
+
+  .image-wrapper {
+    padding: 0;
+    height: fit-content;
+  }
+
+  .img {
+    width: 100vw;
+  }
+
+  li img {
+    width: 20px;
+    margin-bottom: 10px;
+  }
+
+  .form {
+    width: 100%;
+  }
+
+  form {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .wrapper h1 {
+    font-size: 2rem;
+  }
+
+  .desk {
+    display: none;
+  }
+
+  .mob {
+    display: block;
+  }
+
+  .info {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .attribution {
+    display: none;
+  }
+
+  .wrapper-thx {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .wrapper-thx h2 {
+    font-size: 2rem;
+  }
+}
